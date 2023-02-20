@@ -1,0 +1,35 @@
+.tetris-board {}
+
+.tetris-board .block {
+	width: 30px;
+	height: 30px;
+	border: solid 1px #ddd;
+	display: inline-block;
+	font-size: 8pt;
+	color: black;
+	text-align: center;
+	background: white;
+}
+
+.tetris-board .row {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+.tetris-board .floor .block {
+	background: #333;
+}
+
+.tetris-board .block.filled {
+	background-color: black;
+	color: white;
+}
+
+.points {
+	font-family: 'Press Start 2P', cursive;
+	background: #333;
+	color: white;
+	padding: 4px;
+	width: 300px;
+}
