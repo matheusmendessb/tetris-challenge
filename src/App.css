@@ -1,5 +1,61 @@
-.App {
-  text-align: center;
+.body {
+	margin: 0;
 }
 
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./assets/tetris-background.jpg");
+}
 
+.tetris-board .block {
+	width: 30px;
+	height: 30px;
+	border: solid 1px #ddd;
+	display: inline-block;
+	font-size: 8pt;
+	color: black;
+	text-align: center;
+	background: white;
+}
+
+.tetris-board .row {
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+}
+
+.tetris-board .floor .block {
+	background: #333;
+}
+
+.tetris-board .block.filled {
+	background-color: black;
+	color: white;
+}
+
+.points {
+	font-family: 'Press Start 2P', cursive;
+	background: darkcyan;
+	color: white;
+	padding: 4px;
+	width: 312px;
+}
+
+a {
+	text-decoration: none;
+	background-color: darkcyan;
+	color: white;
+	padding: 7px; 
+	border-radius: 10px;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+a:hover {
+	background-color: white;
+	color: darkcyan;
+}
